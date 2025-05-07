@@ -3,7 +3,7 @@
 import { Menu } from "lucide-react"
 import { Button } from "../ui/button"
 import { Sheet, SheetTrigger, SheetContent, SheetTitle } from "../ui/sheet"
-import logo from '../../assets/logo.png'
+import logo from '../../public/logo.png'
 import Link from "next/link"
 
 const Nav = () => {
@@ -28,14 +28,14 @@ const Nav = () => {
 
             {/* Mobile Menu */}
             <div className="md:hidden">
-                <Sheet>
+                <Sheet >
                     <SheetTrigger asChild>
                         <Button variant="ghost" size="icon">
                             <Menu className="h-6 w-6" />
                         </Button>
                     </SheetTrigger>
 
-                    <SheetContent side="left" className={'px-2'}>
+                    <SheetContent side="left" className={'px-2 w-1/2'}>
 
                         <SheetTitle className={''}>
                             <img src={logo.src} alt="Logo" className="w-16 h-16" />
