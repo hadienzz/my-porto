@@ -8,7 +8,7 @@ import Link from "next/link"
 
 const Nav = () => {
     return (
-        <nav className="">
+        <nav className="border-b-[0.5px] border-[black]">
             {/* Desktop Menu */}
 
             <div className="hidden md:flex items-center justify-between px-2 sm:px-4 md:px-6 lg:px-8 ">
