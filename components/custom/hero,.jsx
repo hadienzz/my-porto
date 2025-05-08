@@ -12,7 +12,7 @@ import Link from 'next/link'
 
 const Hero = () => {
     return (
-        <section className="px-3 sm:px-5 md:px-7 lg:px-9 mt-8 md:flex justify-center items-center place-items-center  relative flex-row-reverse">
+        <section className="px-3 sm:px-5 md:px-7 lg:px-9 mt-8 md:flex justify-center items-center place-items-center relative flex-row-reverse gap-20 font-inter">
             <div className="  ">
                 <TooltipProvider className="">
                     <TechStack image={figmaLogo} name={'Figma'} className={'ml-40'} />
@@ -23,11 +23,11 @@ const Hero = () => {
                 </TooltipProvider>
             </div>
 
-            <div className="relative ">
-                <h1 className="text-6xl md:text-7xl lg:text-8xl font-inter lg:w-[120px] "> Front End Engineer</h1>
-                <p className=" my-2 text-lg max-w-[420px] text-stone-700 leading-[1.2]">I am Hadin Pramiadi, a Front End Engineer with 3 years study experience and i have strong knowledge in web development</p>
+            <div className=" ">
+                <h1 className="text-6xl md:text-7xl lg:text-8xl font-inter lg:w-[120px] primary"> Front End Engineer</h1>
+                <p className="my-5 pb-3 text-[22px]f max-w-[520px] text-[#444444] leading-[1.2]">I am Hadin Pramiadi, a Front End Engineer with 3 years study experience and i have strong knowledge in web development</p>
                 <Link href={'https://www.linkedin.com/in/hadin-pramiadi-55946525b/'} target='_blank'>
-                    <Button className={'cursor-pointer'}>Contact Me!</Button>
+                    <Button className={'cursor-pointer px-6 py-6'}>Contact Me!</Button>
                 </Link>
             </div>
 
