@@ -12,14 +12,14 @@ import Link from 'next/link'
 
 const Hero = () => {
     return (
-        <section className="px-3 sm:px-5 md:px-7 lg:px-9 mt-8 md:flex justify-center items-center place-items-center gap-20 relative flex-row-reverse">
-            <div className="relative  z-20">
+        <section className="px-3 sm:px-5 md:px-7 lg:px-9 mt-8 md:flex justify-center items-center place-items-center  relative flex-row-reverse">
+            <div className="  ">
                 <TooltipProvider className="">
-                    <TechStack image={figmaLogo} name={'Figma'} className={''} />
+                    <TechStack image={figmaLogo} name={'Figma'} className={'ml-40'} />
                     <TechStack image={nextLogo} name={'Next JS'} className={''} />
                     <TechStack image={nodeLogo} name={'Node JS'} className={'ml-35'} />
                     <TechStack image={tailwindLogo} name={'Tailwind CSS'} className={'ml-75'} />
-                    <TechStack image={githubLogo} name={'Github'} className={''} />
+                    <TechStack image={githubLogo} name={'Github'} className={'ml-15'} />
                 </TooltipProvider>
             </div>
 
