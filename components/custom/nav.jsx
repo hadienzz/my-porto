@@ -1,6 +1,6 @@
 'use client'
 
-import { Menu } from "lucide-react"
+import { Menu, Target } from "lucide-react"
 import { Button } from "../ui/button"
 import { Sheet, SheetTrigger, SheetContent, SheetTitle } from "../ui/sheet"
 import logo from '../../public/logo.png'
@@ -8,7 +8,7 @@ import Link from "next/link"
 
 const Nav = () => {
     return (
-        <nav className="border-b-[0.5px] border-[black]">
+        <nav className="border-b-[0.5px] border-[black] fixed w-full backdrop-blur-sm z-1">
             {/* Desktop Menu */}
 
             <div className="hidden md:flex items-center justify-between px-2 sm:px-4 md:px-6 lg:px-8 ">
@@ -22,7 +22,11 @@ const Nav = () => {
                     <li>About Me</li>
                 </ul>
                 <div>
-                    <Button>Contact Me</Button>
+                    <Link href={'https://wa.me/6281283832132'}  target="_blank">
+                        <Button className="cursor-pointer">
+                            Contact Me
+                        </Button>
+                    </Link>
                 </div>
             </div>
 
