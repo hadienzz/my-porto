@@ -9,20 +9,18 @@ import Link from "next/link"
 const Nav = () => {
     return (
         <nav className="border-b-[0.5px] border-[black] fixed w-full backdrop-blur-sm z-1">
-            {/* Desktop Menu */}
-
             <div className="hidden md:flex items-center justify-between px-2 sm:px-4 md:px-6 lg:px-8 ">
                 <div>
                     <img src={logo.src} className="w-16 h-16" alt="Logo" />
                 </div>
                 <ul className="inline-flex gap-4">
-                    <li>Personal</li>
-                    <li>Business</li>
-                    <li>Partner</li>
-                    <li>About Me</li>
+                    <Link href={'/services'}>Services</Link>
+                    <Link href={'#'}>Business</Link>
+                    <Link href={'#'}>Partner</Link>
+                    <Link href={'#'}>About Me</Link>
                 </ul>
                 <div>
-                    <Link href={'https://wa.me/6281283832132'}  target="_blank">
+                    <Link href={'https://wa.me/6281283832132'} target="_blank">
                         <Button className="cursor-pointer">
                             Contact Me
                         </Button>
@@ -32,8 +30,8 @@ const Nav = () => {
 
             {/* Mobile Menu */}
             <div className="md:hidden">
-                <Sheet >
-                    <SheetTrigger asChild>
+                <Sheet>
+                    <SheetTrigger asChild className="cursor-pointer">
                         <Button variant="ghost" size="icon">
                             <Menu className="h-6 w-6" />
                         </Button>
@@ -46,8 +44,8 @@ const Nav = () => {
                         </SheetTitle>
 
                         <div className="flex flex-col gap-4 ">
-                            <Link href="#personal" className="hover:bg-stone-100 p-1 ">Personal</Link>
-                            <Link href="#business" className="hover:bg-stone-100 p-1 ">Business</Link>
+                            <Link href="/" className="hover:bg-stone-100 p-1 ">Home</Link>
+                            <Link href="/services" className="hover:bg-stone-100 p-1 ">Services</Link>
                             <Link href="#partner" className="hover:bg-stone-100 p-1 ">Partner</Link>
                             <Link href="#about" className="hover:bg-stone-100 p-1 ">About me </Link>
                         </div>

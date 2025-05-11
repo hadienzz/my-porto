@@ -5,7 +5,6 @@ import Nav from "@/components/custom/nav"
 const App = () => {
   return (
     <>
-      <Nav />
       <Hero />
       <Carousel />
     </>
