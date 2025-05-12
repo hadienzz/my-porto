@@ -11,9 +11,10 @@ body {
 
 @theme {
   --animate-ticker: ticker 40s linear infinite;
-  --animate-infinite-scroll: infinite-scroll 4s linear infinite;
+  --animate-infinite-scroll: infinite-scroll 8s linear infinite;
   --animate-fade-in-scale: fade-in-scale 5s ease-out;
-  --font-inter: 'Inter', sans-serif
+  --font-inter: 'Inter', sans-serif;
+  --color-prim: #444444;
 
   @keyframes ticker {
     0% {
@@ -47,9 +48,6 @@ body {
       transform: scale(1);
     }
   }
-  
-
-
 }
 
 @layer utilities {}
