@@ -12,7 +12,7 @@ import { TooltipProvider } from '@radix-ui/react-tooltip'
 import Link from 'next/link'
 
 
-const Hero = () => {
+const  Hero = () => {
     return (
         <section className="px-3 sm:px-5 md:px-7 lg:px-9 flex flex-col items-center  font-inter md:max-w-[1200px] mx-auto text-start md:text-center gap-5">
             <div className="pt-20">
