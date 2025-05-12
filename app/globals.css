@@ -1,7 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap");
 @import "tailwindcss";
 
-
 @custom-variant dark (&:is(.dark *));
 
 body {
@@ -13,28 +12,25 @@ body {
   --animate-ticker: ticker 40s linear infinite;
   --animate-infinite-scroll: infinite-scroll 8s linear infinite;
   --animate-fade-in-scale: fade-in-scale 5s ease-out;
-  --font-inter: 'Inter', sans-serif;
+  --font-inter: "Inter", sans-serif;
   --color-prim: #444444;
-
-  @keyframes ticker {
+  @keyframes infinite-scroll {
     0% {
-      transform: translateX(0)
+      transform: translateX(0%);
     }
-
     100% {
-      transform: translateX(calc(-50% - 20px));
+      transform: translateX(-50%);
     }
   }
 
-  @keyframes infinite-scroll {
+  @keyframes ticker {
     0% {
-      transform: translateX(0)
+      transform: translateX(0);
     }
 
     100% {
       transform: translateX(calc(-50% - 20px));
     }
-
   }
 
   @keyframes fade-in-scale {
@@ -50,7 +46,8 @@ body {
   }
 }
 
-@layer utilities {}
+@layer utilities {
+}
 
 @theme inline {
   --color-background: var(--background);

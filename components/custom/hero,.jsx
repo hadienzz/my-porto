@@ -10,21 +10,21 @@ import reactLogo from '../../public/react-js-logo.png'
 import TechStack from './tech-stack'
 import { TooltipProvider } from '@radix-ui/react-tooltip'
 import Link from 'next/link'
-import Nav from './nav'
+import HeaderHero from './header-hero'
 
 
-
-const  Hero = () => {
+const Hero = () => {
     return (
         <section className="px-3 sm:px-5 md:px-7 lg:px-9 flex flex-col items-center  font-inter md:max-w-[1200px] mx-auto text-start md:text-center gap-5">
 
-            <div className="pt-20">
-                <h1 className="text-6xl md:text-7xl lg:text-8xl font-bold text-stone-900">Front End <span className=''>Engineer</span></h1>
-                <p className="my-5 text-lg max-w-[520px] text-prim leading-[1.2] mx-auto">
-                    I am Hadin Pramiadi, a Front End Engineer with 3 years study experience and I have strong knowledge in web development.
-                </p>
+            <HeaderHero />
+
+            <div className='flex gap-2 justify-center items-center'>
                 <Link href={'https://www.linkedin.com/in/hadin-pramiadi-55946525b/'} target='_blank'>
-                    <Button className="cursor-pointer px-6 py-6 ">Lets Connect!</Button>
+                    <Button className="cursor-pointer px-6 py-6 w-36">Lets Connect!</Button>
+                </Link>
+                <Link href={'/contact'}>
+                    <Button className={'bg-transparent cursor-pointer text-black border-1 border-black w-36 py-6 hover:text-white'}>Send me a message</Button>
                 </Link>
             </div>
 

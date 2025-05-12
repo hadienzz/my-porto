@@ -14,8 +14,8 @@ const Nav = () => {
                     <img src={logo.src} className="w-16 h-16" alt="Logo" />
                 </div>
                 <ul className="inline-flex gap-4">
+                    <Link href={'/'}>Home</Link>
                     <Link href={'/services'}>Services</Link>
-                    <Link href={'#'}>Business</Link>
                     <Link href={'#'}>Partner</Link>
                     <Link href={'#'}>About Me</Link>
                 </ul>
