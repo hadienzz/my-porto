@@ -15,7 +15,7 @@ import HeaderHero from './header-hero'
 
 const Hero = () => {
     return (
-        <section className="px-3 sm:px-5 md:px-7 lg:px-9 flex flex-col items-center  font-inter md:max-w-[1200px] mx-auto text-start md:text-center gap-5">
+        <section className="px-3 sm:px-5 md:px-7 lg:px-9 flex flex-col items-center font-inter  mx-auto text-start md:text-center gap-8 h-screen bg-gradient-to-br from-white via-slate-100 to-slate-200 ">
 
             <HeaderHero />
 
